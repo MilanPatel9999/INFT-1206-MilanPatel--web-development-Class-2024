@@ -47,7 +47,11 @@ header, section, aside, nav, footer {
 @font-face {
   font-family: "Lovato W00 Light";
   src: url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.eot");
-  /* Add more font formats as needed */
+  src: url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.svg#Lovato W00 Light")format("svg");
 }
 
 /* Header and footer border styles */
@@ -64,7 +68,7 @@ html {
 
 /* Heading styles with custom fonts */
 h1, h2 {
-  font-family: 'Josefin Slab', sans-serif;
+  font-family: 'Josefin Slab';
   letter-spacing: 2px;
 }
 
