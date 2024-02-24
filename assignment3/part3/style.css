@@ -1,0 +1,164 @@
+/*
+    Name: Milan Patel
+    File: style.css
+    Date: 23 Feb 2024
+    Typesetting a community school homepage
+*/
+
+/* Global styling for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles for margin and width */
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout styles for main sections */
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+/* Clearing floats in the footer */
+footer {
+  clear: both;
+}
+
+/* Padding for header, sections, aside, nav, and footer */
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* Font face for custom font */
+@font-face {
+  font-family: "Lovato W00 Light";
+  src: url("https://db.onlinewebfonts.com/t/0a083bb470e88e1d434eb1712fd37764.eot");
+  /* Add more font formats as needed */
+}
+
+/* Header and footer border styles */
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Font styles for the entire document */
+html {
+  font-family: "Lovato W00 Light", serif;
+  font-size: 10px;
+}
+
+/* Heading styles with custom fonts */
+h1, h2 {
+  font-family: 'Josefin Slab', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+/* Paragraph indentation after heading 2 in section */
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* Font styles for paragraphs and list items */
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
+/* Link styling */
+a {
+  outline: none;
+}
+
+/* External link styling */
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+a:link, a:visited {
+  color: #a66;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* Active link styling */
+a:active {
+  color: transparent;
+  text-shadow: 0px 0px 1px #f00,
+    0px 0px 2px #f00,
+    0px 0px 3px black,
+    0px 0px 4px black;
+}
+
+/* List styles for unordered and ordered lists */
+ul, ol {
+  margin: 1.6rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+/* Navigation styles */
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}

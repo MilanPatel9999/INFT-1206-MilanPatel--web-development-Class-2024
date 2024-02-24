@@ -1,0 +1,79 @@
+/*
+    Name: Milan Patel
+    File: style.css
+    Date: 23 Feb 2024
+    Fundamental layout comprehension
+*/
+
+/* Global styles for the entire body */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
+
+/* Responsive styling for images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Styling for the site title */
+.nev {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* Styling for the main content section */
+.txt {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #000;
+  padding: .5em;
+  top: 0;
+  position: sticky;
+}
+
+/* Styling for the navigation list */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+/* Styling for the list of photos */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Styling for featured images */
+.feature {
+  width: 200px;
+  float: left;
+  margin: 0 20px 20px 0;
+}

@@ -1,0 +1,53 @@
+/*
+	Name: Milan Patel
+	File: style.css
+	Date: 23 Feb 2024
+  Styling a biography page
+	*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Change color of h1 to hotpink and add border-bottom */
+h1 {
+  color: hotpink;
+  border-bottom: 10px dotted purple;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Make h2 italic */
+h2 {
+font-style: italic;
+}
+
+/* Style ul for contact details */
+.outerbox {
+background-color: #eeeeee;
+border: 5px solid purple;
+padding: 10px; /* Adjust padding as needed */
+}
+
+/* Change link color on hover */
+a:hover {
+color: green;
+}
+
+.job-title {
+font-size: 1.5rem;
+font-weight: bold;
+color: #999999;
+margin-bottom: 2rem;
+}
+
+/* Update email and web link colors */
+.email{
+color: #367d20ff;
+}
+
+.outerbox a[href*="mailto:"] {
+color: #388022ff;
+}
+
+.outerbox a[href*="http://"] {
+color: #e8795aff;
+}
