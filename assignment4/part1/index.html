@@ -1,63 +1,66 @@
 <!--
-	Name: Milan Patel
-	File: Part-1
-	Date: 2024-03-25
-	Description: To test comprehension of JavaScript fundamentals, such as variables, numbers, operators, strings, and arrays. 
-	-->
+    Name: Milan Patel
+    File: Part-1
+    Date: 2024-03-25
+-->
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
-    <!DOCTYPE html>
-    <html lang="en-US">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-    
-        <title>Silly story generator</title>
-    
-        <style>
-          body {
-            font-family: helvetica, sans-serif;
-            width: 350px;
-          }
-    
-          label {
-            font-weight: bold;
-          }
-    
-          div {
-            padding-bottom: 20px;
-          }
-    
-          input[type="text"] {
-            padding: 5px;
-            width: 150px;
-          }
-    
-          p {
-            background: #ffc125;
-            color: #5e2612;
-            padding: 10px;
-            visibility: hidden;
-          }
-        </style>
-      </head>
-    
-      <body>
-        <div>
-          <label for="customname">Enter custom name:</label>
-          <input id="customname" type="text" placeholder="" />
-        </div>
-        <div>
-          <label for="us">US</label
-          ><input id="us" type="radio" name="ukus" value="us" checked />
-          <label for="uk">UK</label
-          ><input id="uk" type="radio" name="ukus" value="uk" />
-        </div>
-        <div>
-          <button class="randomize">Generate random story</button>
-        </div>
-        <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-        <p class="story"></p>
-        <script src="main.js"></script>
-      </body>
-    </html>
+    <title>Silly story generator</title>
+
+    <style>
+      /* CSS Styles */
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden; /* Initially hidden until story is generated */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Input Fields -->
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <!-- Radio Buttons for selecting US or UK -->
+      <label for="us">US</label>
+      <input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label>
+      <input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <!-- Button to generate random story -->
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Display area for generated story -->
+    <p class="story"></p>
+    <!-- External JavaScript File -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,49 +1,56 @@
 /*
-	Name: Milan Patel
-	File: Part-1
-	Date: 2024-03-25
-	Description: Css file.
-	*/
+    Name: Milan Patel
+    File: Part-1
+    Date: 2024-03-25
+    Description: CSS file.
+*/
+
+/* Styling for the heading */
 h1 {
-    font-family: helvetica, arial, sans-serif;
-    text-align: center;
-  }
-  
-  body {
-    width: 640px;
-    margin: 0 auto;
-  }
-  
-  .full-img {
-    position: relative;
-    display: block;
-    width: 640px;
-    height: 480px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 640px;
-    height: 480px;
-    background-color: rgba(0,0,0,0);
-  }
-  
-  button {
-    border: 0;
-    background: rgba(150,150,150,0.6);
-    text-shadow: 1px 1px 1px white;
-    border: 1px solid #999;
-    position: absolute;
-    cursor: pointer;
-    top: 2px;
-    left: 2px;
-  }
-  
-  .thumb-bar img {
-    display: block;
-    width: 20%;
-    float: left;
-    cursor: pointer;
-  }
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+/* General styling for the body */
+body {
+  width: 640px;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Styling for the main image container */
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+}
+
+/* Styling for the overlay on the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,0,0); /* Transparent overlay */
+}
+
+/* Styling for buttons */
+button {
+  border: 0;
+  background: rgba(150,150,150,0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+/* Styling for thumbnail images */
+.thumb-bar img {
+  display: block;
+  width: 20%; /* Each thumbnail takes up 20% of the container */
+  float: left; /* Float thumbnails to the left */
+  cursor: pointer;
+}

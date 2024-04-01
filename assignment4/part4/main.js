@@ -1,9 +1,10 @@
 /*
-	Name: Milan Patel
-	File: Part-1
-	Date: 2024-03-25
-	Description: Java Script file.
-	*/
+    Name: Milan Patel
+    File: Part-1
+    Date: 2024-03-25
+    Description: JavaScript file.
+*/
+
 // Set up canvas
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -16,9 +17,11 @@ function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Function to generate random RGB color
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
 // Shape class
 class Shape {
     constructor(x, y, velX, velY) {
@@ -46,27 +49,20 @@ class Ball extends Shape {
     }
 
     update() {
-        if (this.x + this.size >= width) {
-            this.velX = -Math.abs(this.velX);
+        // Bounce off the edges of the canvas
+        if (this.x + this.size >= width || this.x - this.size <= 0) {
+            this.velX = -this.velX;
         }
-
-        if (this.x - this.size <= 0) {
-            this.velX = Math.abs(this.velX);
+        if (this.y + this.size >= height || this.y - this.size <= 0) {
+            this.velY = -this.velY;
         }
-
-        if (this.y + this.size >= height) {
-            this.velY = -Math.abs(this.velY);
-        }
-
-        if (this.y - this.size <= 0) {
-            this.velY = Math.abs(this.velY);
-        }
-
+        // Move the ball
         this.x += this.velX;
         this.y += this.velY;
     }
 
     collisionDetect() {
+        // Check for collisions with other balls
         for (const ball of balls) {
             if (ball !== this && ball.exists) {
                 const dx = this.x - ball.x;
@@ -99,16 +95,17 @@ class EvilCircle extends Shape {
     }
 
     checkBounds() {
+        // Prevent the evil circle from going out of the canvas
         if (this.x + this.size >= width || this.x - this.size <= 0) {
             this.x -= this.velX;
         }
-
         if (this.y + this.size >= height || this.y - this.size <= 0) {
             this.y -= this.velY;
         }
     }
 
     setControls() {
+        // Control the movement of the evil circle with keyboard
         window.addEventListener("keydown", (e) => {
             switch (e.key) {
                 case "a":
@@ -128,6 +125,7 @@ class EvilCircle extends Shape {
     }
 
     collisionDetect() {
+        // Check for collisions between the evil circle and balls
         for (let j = 0; j < balls.length; j++) {
             if (balls[j].exists) {
                 let dx = this.x - balls[j].x;
@@ -136,7 +134,7 @@ class EvilCircle extends Shape {
 
                 if (distance < this.size + balls[j].size) {
                     balls[j].exists = false;
-                    count--;
+                    count--; // Decrease ball count
                 }
             }
         }
@@ -146,7 +144,7 @@ class EvilCircle extends Shape {
 const balls = [];
 let count = 0; // Ball count
 
-// Loop to create balls
+// Create balls
 while (balls.length < 25) {
     const size = random(10, 20);
     const ball = new Ball(
@@ -180,7 +178,7 @@ function loop() {
     evilCircle.checkBounds();
     evilCircle.collisionDetect();
 
-    requestAnimationFrame(loop);
+    requestAnimationFrame(loop); // Call loop recursively
 }
 
-loop();
+loop(); // Start animation loop
