@@ -1,3 +1,9 @@
+/*
+	Name: Milan Patel
+	File: Part-1
+	Date: 2024-03-25
+	Description: Java Script file.
+	*/
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');

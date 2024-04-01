@@ -1,3 +1,9 @@
+/*
+	Name: Milan Patel
+	File: Part-1
+	Date: 2024-03-25
+	Description: Java Script file.
+	*/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
