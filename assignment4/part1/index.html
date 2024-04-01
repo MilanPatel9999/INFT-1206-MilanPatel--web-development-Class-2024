@@ -3,64 +3,62 @@
     File: Part-1
     Date: 2024-03-25
 -->
-
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
     <title>Silly story generator</title>
 
     <style>
-      /* CSS Styles */
-      body {
-        font-family: helvetica, sans-serif;
-        width: 350px;
-      }
-
-      label {
-        font-weight: bold;
-      }
-
-      div {
-        padding-bottom: 20px;
-      }
-
-      input[type="text"] {
-        padding: 5px;
-        width: 150px;
-      }
-
-      p {
-        background: #ffc125;
-        color: #5e2612;
-        padding: 10px;
-        visibility: hidden; /* Initially hidden until story is generated */
-      }
+        /* CSS styles for body */
+        body {
+            font-family: helvetica, sans-serif;
+            width: 350px;
+        }
+        /* CSS styles for labels */
+        label {
+            font-weight: bold;  
+        }
+        /* CSS styles for div elements */
+        div {
+            padding-bottom: 20px;
+        }
+        /* CSS styles for text inputs */
+        input[type="text"] {
+            padding: 5px;
+            width: 150px;
+        }
+        /* CSS styles for paragraphs */
+        p {
+            background: #FFC125;
+            color: #5E2612;
+            padding: 10px;
+            visibility: hidden; /* Initially hidden */
+        }
     </style>
-  </head>
+</head>
 
-  <body>
-    <!-- Input Fields -->
+<body>
+    <!-- Form for entering custom name and selecting country -->
     <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="" />
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="">
     </div>
     <div>
-      <!-- Radio Buttons for selecting US or UK -->
-      <label for="us">US</label>
-      <input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label>
-      <input id="uk" type="radio" name="ukus" value="uk" />
+        <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+        <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
     </div>
+    <!-- Button to generate random story -->
     <div>
-      <!-- Button to generate random story -->
-      <button class="randomize">Generate random story</button>
+        <button class="randomize">Generate random story</button>
     </div>
-    <!-- Display area for generated story -->
+    <!-- Paragraph to display the generated story -->
     <p class="story"></p>
-    <!-- External JavaScript File -->
+    
+    <!-- JavaScript file for generating the story -->
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
