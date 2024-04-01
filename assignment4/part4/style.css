@@ -1,40 +1,47 @@
 /*
-	Name: Milan Patel
-	File: Part-1
-	Date: 2024-03-25
-	Description: Css file.
-	*/
+    Name: Milan Patel
+    File: Part-1
+    Date: 2024-03-25
+    Description: CSS file.
+*/
+
+/* Resetting margins for HTML and body */
 html, body {
-    margin: 0;
-  }
-  
-  html {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 100%;
- 
-  }
-  
-  body {
-    overflow: hidden;
-    height: inherit;
-    width:  inherit;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    letter-spacing: -1px;
-    position: absolute;
-    margin: 0;
-    top: -4px;
-    right: 5px;
-  
-    color: transparent;
-    text-shadow: 0 0 4px white;
-  }
-  p {
-    position: absolute;
-    margin: 0;
-    top: 35px;
-    right: 5px;
-    color: #aaa;
-  }
+  margin: 0;
+}
+
+/* Setting font family for HTML */
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%; /* Setting height to 100% */
+}
+
+/* Setting overflow behavior for body and inheriting height and width from HTML */
+body {
+  overflow: hidden; /* Hide overflow content */
+  height: inherit; /* Inherit height from parent (HTML) */
+  width: inherit; /* Inherit width from parent (HTML) */
+}
+
+/* Styling for heading */
+h1 {
+  font-size: 2rem; /* Setting font size */
+  letter-spacing: -1px; /* Adjusting letter spacing */
+  position: absolute; /* Positioning relative to the viewport */
+  margin: 0; /* Removing default margin */
+  top: -4px; /* Adjusting top position */
+  right: 5px; /* Adjusting right position */
+
+  /* Text styling */
+  color: transparent; /* Making text transparent */
+  text-shadow: 0 0 4px white; /* Adding text shadow effect */
+}
+
+/* Styling for paragraph */
+p {
+  position: absolute; /* Positioning relative to the viewport */
+  margin: 0; /* Removing default margin */
+  top: 35px; /* Adjusting top position */
+  right: 5px; /* Adjusting right position */
+  color: #aaa; /* Setting text color */
+}
