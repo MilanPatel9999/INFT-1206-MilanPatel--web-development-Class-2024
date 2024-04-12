@@ -1,3 +1,10 @@
+<!--
+    Name: Milan Patel
+    File: part-1
+    Date: 2024-04-12
+    Description: index.html file.
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -6,15 +13,19 @@
     <title>Accessibility assessment</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+       <!-- The below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    
   </head>
 
   <body>
     <div class="header">
+      <!-- Welcome message -->
       <font size="7">Welcome to our wildlife website</font>
     </div>
 
     <div class="nav">
+      <!-- Navigation links -->
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
@@ -22,6 +33,7 @@
         <li><a href="#">Blog</a></li>
       </ul>
 
+      <!-- Search form -->
       <form class="search">
         <input type="search" name="q" placeholder="Search query">
         <input type="submit" value="Go!">
@@ -30,21 +42,25 @@
 
     <main>
       <article>
+        <!-- Article title -->
         <font size="6">The trouble with Bears</font>
         <br><br>
+        <!-- Author -->
         By Evan Wild
         <br><br>
+        <!-- Article content -->
         Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.
-        <br><br>
-        So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.
+        <!-- More content -->
         <br><br>
         <font size="5">Types of bear</font>
         <br><br>
+        <!-- Bear types information -->
         Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.
+        <!-- Bear types table -->
         <br><br>
-        Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
-        <br><br>
+        <!-- Table -->
         <table>
+          <!-- Table header -->
           <thead>
             <tr>
               <td>Bear Type</td>
@@ -55,6 +71,7 @@
               <td>Diet</td>
             </tr>
           </thead>
+          <!-- Table body -->
           <tbody>
             <tr>
               <td>Wild</td>
@@ -75,46 +92,61 @@
           </tbody>
         </table>
 
+        <!-- More content -->
         <font size="5">Habitats and Eating habits</font>
         <br><br>
+        <!-- Content -->
         Wild bears eat a variety of meat, fish, fruit, nuts, and other natually growing ingredients. In general they will hunt for food themselves in woodland or rivers, but at a push they will track down their sustenance from farms or country houses. They tend to live in relative isolation, in caves, tents, or cottages.
+        <!-- Image -->
         <br><br>
         <img src="media/wild-bear.jpg">
         <br><br>
+        <!-- More content -->
         Urban (gentrified) bears on the other hand have largely abandoned the old ways. They will hunt other urban creatures if necessary (including other predators like rats and foxes), but prefer to scavenge from readily available urban food outlets like dumpsters, bins, and fast food joints. When food has proven scarce, urban bears have even been known to break into people's kitchens and steal essentials like baked beans, ready meals, and microwave ovens.
+        <!-- Image -->
         <br><br>
         <img src="media/urban-bear.jpg">
         <br><br>
+        <!-- More content -->
         Urban bears will sleep anywhere they can, from bus shelters and parks, to the toilets in McDonalds, to their own apartment.
-        <br><br>
+        <!-- More content -->
         <font size="5">Mating rituals</font>
         <br><br>
+        <!-- Content -->
         Bears are romantic creatures by nature, and will naturally look for a mate that they can spend the rest of their lives with. They will woo a potential suitor by making their dwelling look attractive — for example with cave paintings or a bed of reeds in the case of a wild bear, and mood lighting and a Michael Bublé CD in the case of an urban bear.
+        <!-- More content -->
         <br><br>
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
         <br><br>
+        <!-- Audio -->
         <audio controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
 
+        <!-- Author's information -->
         <aside>
-
           <font size="5">About the author</font>
         <br><br>
+          <!-- Author's bio -->
           Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.
         <br><br>
+          <!-- More content -->
           He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
-
+        <br><br>
         </aside>
+
+        <!-- Comments section -->
         <section class="comments">
           <div class="show-hide">Show comments</div>
 
           <div class="comment-wrapper">
 
+            <!-- Add comment title -->
             <font size="6">Add comment</font>
 
+            <!-- Comment form -->
             <form class="comment-form">
               <div class="flex-pair">
                 Your name:
@@ -129,12 +161,15 @@
               </div>
             </form>
 
+            <!-- Comments title -->
             <font size="6">Comments</font>
 
+            <!-- Comment list -->
             <ul class="comment-container">
 
               <li>
 
+                <!-- Comment -->
                 <p>Bob Fossil</p>
 
                 <p>Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in a truck and driving them outta here. I run a zoo, you know.</p>
@@ -147,6 +182,7 @@
         </section>
       </article>
 
+      <!-- Related links -->
       <div class="secondary">
         <font size="6">Related</font>
 
@@ -160,10 +196,12 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="main.js"></script>
 
   </body>
